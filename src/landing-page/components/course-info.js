@@ -7,7 +7,7 @@ import {
     CourseStarts,
     ConvincedTitle
 } from '../common-styles';
-import { Tab, List, Button, Link } from 'semantic-ui-react';
+import { Tab, List, Button } from 'semantic-ui-react';
 import { COURSE_URL } from '../../config-vars';
 
 /**
@@ -127,7 +127,7 @@ class CourseInfo extends Component {
                 <Tab menu={{ secondary: true, pointing: true }} panes={costPanes} />
 
                 <ConvincedTitle>
-                    Not convinced yet? Find more info about the course at the course page.
+                    Not convinced yet? Find more information about the course at the course page.
                 </ConvincedTitle>
 
                 <Button onClick={this.goToCourse} primary>Go To Course</Button>

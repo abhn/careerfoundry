@@ -81,7 +81,8 @@ class LandingPage extends Component {
                 <CourseInfo 
                     currencyCode={this.state.visitorGeoLocation} 
                     courseInfo={this.state.courseInfo} 
-                    coursesList={this.state.coursesList} />
+                    coursesList={this.state.coursesList}
+                    loading={this.state.loading} />
                 <Footer/>
             </Container>
         )
