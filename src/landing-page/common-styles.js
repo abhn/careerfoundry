@@ -73,8 +73,7 @@ export const CourseStarts = styled.div`
 `;
 
 export const ConvincedTitle = styled.div`
-    font-weight: 600;
-    color: #444;
+    color: #222;
     font-size: 1.2rem;
     font-family: 'PT Sans', sans-serif;
     margin: 15px 0 10px;

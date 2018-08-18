@@ -8,7 +8,6 @@ import {
     ConvincedTitle
 } from '../common-styles';
 import { Tab, List, Button } from 'semantic-ui-react';
-import { COURSE_URL } from '../../config-vars';
 
 /**
  * @name CourseInfo
