@@ -5,7 +5,7 @@ A simple landing page made with ReactJS and Semantic UI components.
 - Mobile responsive, tested up to 320px min-width
 - Modular layout, can be easily integrated with other React code.
 - Separation of concerns; services and API related functions are separated out. Smart (data) components minimized as a basic optimization
-
+- Automatic currency detection through IP based geolocation.
 
 ### Next Steps
 These would be on my agenda if more time would be permitted.
@@ -14,6 +14,7 @@ These would be on my agenda if more time would be permitted.
 - Add validations to data to prevent breakage in case of bad data (incorrect data format from backend, client's network errors etc)
 - More meaningful unit tests to prevent breaking of features on addition of code.
 - UI and components testing.
+- Loader for when a dropdown is selected but API hasn't returned  because of slower network on client's end.
 
 #### Later
 - Automating test runner on PR raise with Travis
@@ -28,3 +29,14 @@ These would be on my agenda if more time would be permitted.
 - Create a `.env` file in the project root and add a line to it: `REACT_APP_IPSTACK_API_KEY=<IPSTACK_API_KEY>` replacing with your API key.
 - Run the local server with `npm start`
 - Run the tests with `npm test`
+
+### Directory Structrue
+- `/src/landing-page`: Main app
+- `/src/services`: Services and vanilla JS functions (API, GeoIP location)
+- `/src/tests`: Various tests
+
+### Important Files
+- `/src/config-vars`: URLs and other constants used throughout the app
+- `/src/landing-page/index.js`: Container component which links all the children components and services their data needs
+- `/src/landing-page/components/*`: Dumb components rendered by landing-page.
+- `src/landing-page/common-styles.js`: Common CSS (styled-components) used by all the components.
