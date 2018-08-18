@@ -6,7 +6,7 @@ class Nav extends Component {
         return (
             <div>
                 <h3>CareerFoundry</h3>
-                <CourseDropdown/>
+                <CourseDropdown coursesList={this.props.coursesList} courseSelected={this.props.courseSelected} />
             </div>
         )
     }
