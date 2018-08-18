@@ -75,8 +75,13 @@ class LandingPage extends Component {
     render() {        
         return (
             <Container>
-                <Nav coursesList={this.state.coursesList} courseSelected={this.courseSelected} />
-                <CourseInfo currencyCode={this.state.visitorGeoLocation} courseInfo={this.state.courseInfo} />
+                <Nav 
+                    coursesList={this.state.coursesList} 
+                    courseSelected={this.courseSelected} />
+                <CourseInfo 
+                    currencyCode={this.state.visitorGeoLocation} 
+                    courseInfo={this.state.courseInfo} 
+                    coursesList={this.state.coursesList} />
                 <Footer/>
             </Container>
         )
