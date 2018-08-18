@@ -23,6 +23,9 @@ These would be on my agenda if more time would be permitted.
 - Set up Redux and cache the Course information once it comes on the frontend.
 - If the site grows, set up `staging` branch to serve as a point of testing before actually pushing code to master.
 
+### Known Bugs
+- When the dropdown is open, horizontal scroll creeps in. It vanishes when the dropdown is closed again.
+
 ### Installation Instructions
 - Clone this repository
 - Install npm packages: `npm install`
