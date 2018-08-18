@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import { Dropdown } from 'semantic-ui-react';
 
+/**
+ * @name CourseDropdown
+ * @description courses dropdown in the top nav bar
+ * @param coursesList []
+ * @param courseSelected f
+ */
 class CourseDropdown extends Component {
     constructor(props) {
         super(props);

@@ -5,7 +5,7 @@ import Footer from './components/footer';
 import { getVisitorLocation } from '../services/get-visitor-location';
 import { getCourses } from '../services/get-courses';
 import { getCourseDetails } from '../services/get-course-details';
-
+import { Container } from './common-styles';
 
 /**
  * @name LandingPage
@@ -74,11 +74,11 @@ class LandingPage extends Component {
 
     render() {        
         return (
-            <div>
+            <Container>
                 <Nav coursesList={this.state.coursesList} courseSelected={this.courseSelected} />
                 <CourseInfo currencyCode={this.state.visitorGeoLocation} courseInfo={this.state.courseInfo} />
                 <Footer/>
-            </div>
+            </Container>
         )
     }
 }
